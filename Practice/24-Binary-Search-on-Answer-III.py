@@ -64,57 +64,56 @@ days = 5
 
 # Complete this function yourself.
 
-def can_ship(weights, days, capacity):
+# def can_ship(weights, days, capacity):
 
     # What should this start at?
-    weight_loaded = _____
+    # weight_loaded = _____
 
     # What should this start at?
-    days_used = _____
+    # days_used = _____
 
-    for weight in weights:
+    # for weight in weights:
 
         # Complete the condition.
-        if ______________________________:
+        # if ______________________________:
 
             # Move to the next day.
-            days_used = __________________
+            # days_used = __________________
 
             # Start the new day with the current package.
-            weight_loaded = _______________
+            # weight_loaded = _______________
 
-        else:
+        # else:
 
             # Add the package to the current day's load.
-            weight_loaded = _______________
+            # weight_loaded = _______________
 
     # Does this capacity work?
-    return ______________________________
+    # return ______________________________
 
 
 # --------------------------------------------
 # Part 4 — Binary Search
 # --------------------------------------------
 
-def shipWithinDays(weights, days):
+# def shipWithinDays(weights, days):
 
     # Search boundaries
-    left = __________________
-    right = _________________
+    # left = __________________
+    # right = _________________
 
-    while __________________:
+    # while __________________:
 
-        mid = ______________________________
+        # mid = ______________________________
 
-        if can_ship(weights, days, mid):
+        # if can_ship(weights, days, mid):
 
-            right = __________________
+            # right = __________________
 
-        else:
+        # else:
 
-            left = __________________
-
-    return __________________
+            # left = __________________
+    # return __________________
 
 
 # --------------------------------------------

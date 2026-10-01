@@ -165,4 +165,4 @@ while left <= right:
 # In one sentence, what is the fundamental idea behind Binary Search?
 # sorted data traversed optimally 
 
-Binary Search uses the sorted order of data to repeatedly eliminate half of the search space until the target is found or the search space becomes empty.
+# Binary Search uses the sorted order of data to repeatedly eliminate half of the search space until the target is found or the search space becomes empty.

@@ -47,3 +47,26 @@ def search(numbers, target):
                 right = mid - 1
 
     return -1
+
+Identifying the Sorted Half
+Left Half Sorted
+numbers[left] <= numbers[mid]
+Target inside the left half:
+numbers[left] <= target < numbers[mid]
+- Inside → right = mid - 1
+- Outside → left = mid + 1
+
+Right Half Sorted
+If the left half is not sorted, the right half is sorted.
+Target inside the right half:
+numbers[mid] < target <= numbers[right]
+- Inside → left = mid + 1
+- Outside → right = mid - 1
+
+Important Rule
+This approach works because the array is guaranteed to be a rotated version of a sorted array.
+Therefore, during every iteration, at least one half of the current search space is sorted.
+
+Complexity
+- Time: O(log n)
+- Space: O(1)
